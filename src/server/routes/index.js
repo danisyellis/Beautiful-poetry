@@ -10,7 +10,7 @@ router.use('*', (req, res) => {
   const context = {};
 
   const html = renderToString(
-      <StaticRouter context={context} location={req.originalUrl} >
+      <StaticRouter context={context} location={req.originalUrl}>
         <App />
       </StaticRouter>
   );
