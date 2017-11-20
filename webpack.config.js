@@ -6,8 +6,8 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'public'),
     publicPath: '/',
-    filename: 'bundle.js',
-    chunkFilename: 'bundle.js'
+    filename: 'poetion.js',
+    chunkFilename: 'poetion.js'
   },
   module: {
     rules: [
