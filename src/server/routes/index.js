@@ -1,18 +1,16 @@
-import React from 'react'
-import { renderToString } from 'react-dom/server'
-const router = require('express').Router()
-import { StaticRouter } from 'react-router-dom'
-import reducers from '../../client/reducers'
-
-import renderFullPage from './renderFullPage'
-import App from '../../client/components/app'
+import React from 'react';
+import { renderToString } from 'react-dom/server';
+const router = require('express').Router();
+import { StaticRouter } from 'react-router-dom';
+import renderFullPage from './renderFullPage';
+import App from '../../client/components/app';
 
 router.use('*', (req, res) => {
 
   const context = {};
 
   const html = renderToString(
-      <StaticRouter context={context} location={req.originalUrl} >
+      <StaticRouter context={context} location={req.originalUrl}>
         <App />
       </StaticRouter>
   );

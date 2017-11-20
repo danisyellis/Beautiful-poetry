@@ -6,6 +6,6 @@ import App from './components/app';
 
 ReactDOM.hydrate(
     <BrowserRouter>
-      <App/>
+      <App />
     </BrowserRouter>
   , document.querySelector('.container'));

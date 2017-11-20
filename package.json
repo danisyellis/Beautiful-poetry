@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon build/poetion.js",
+    "start:dev": "nodemon dist/server/index.js",
     "start:react-dev": "webpack -d --watch && webpack-dev-server",
     "build": "rm -rf dist && babel ./src/server/index.js -d dist/ --watch src/",
     "webpack:server": "webpack --debug --devtool=eval --watch"
@@ -21,10 +21,14 @@
   },
   "homepage": "https://github.com/danisyellis/Poetion#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "extract-text-webpack-plugin": "^3.0.2",
     "nodemon": "^1.12.1",
     "webpack": "^3.8.1"
   },
