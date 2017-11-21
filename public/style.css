@@ -1,7 +1,9 @@
-.container {
+.react-root {
+  max-height: 100vh;
+  max-width: 100vw;
   display: grid;
   grid-template-columns: 1.5fr 6fr 1.5fr;
-  grid-template-rows: 1fr 6fr 1fr;
+  grid-template-rows: 1fr 600px 1fr;
   grid-template-areas:
   "app-name . credits"
   ". view ."

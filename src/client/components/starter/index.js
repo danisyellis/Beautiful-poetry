@@ -9,9 +9,8 @@ import Name from '../Name';
 export default class Starter extends Component {
   render() {
     return (
-    <div className="hello-world">
+    <div className="react-root">
       <Name />
-      <h1>Hello World!</h1>
       <Credits />
       <View/>
       <Footer />
