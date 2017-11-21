@@ -18,7 +18,7 @@ module.exports = {
           /\.(js|jsx)$/,
           /\.scss$/,
           /\.css$/,
-          /\.json$/
+          // /\.json$/
         ],
         loader: 'url',
         query: {
@@ -38,8 +38,15 @@ module.exports = {
         query: {
           presets: ['es2015']
         }
-      }
-    ]
+      },
+      {
+        loaders: [
+        {
+          test: /\.json$/,
+          loader: 'json'
+        }
+      ]},
+    ],
   },
   plugins: [
     new ExtractTextPlugin('style.css'),
@@ -53,3 +60,4 @@ module.exports = {
     port: 8081
   }
 };
+
