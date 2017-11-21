@@ -45,6 +45,16 @@
   100%  {bottom: 380px;}
 }
 
+@keyframes slidedownbar {
+  0%    {top: 0px;}
+  100%  {top: 450px;}
+}
+
+@keyframes slidedownform {
+  0%    {top: -50px;}
+  100%  {top: 380px;}
+}
+
 .bottom-bar {
   border-style: solid;
   border-radius: 2px;
