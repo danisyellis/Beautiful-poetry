@@ -9,6 +9,10 @@
   ". view ."
   ". util ."
 }
+.poem-canvas {
+  grid-area: view;
+  position: relative;
+  border: 1px dotted red;
 
 .credits {
   grid-area: credits;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Starter from '../starter';
+import { Stage, Layer, Canvas, Text, Transform} from 'react-konva';
 
 
 export default class App extends Component {
