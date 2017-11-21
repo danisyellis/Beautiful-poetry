@@ -1,5 +1,5 @@
 .react-root {
-  width: auto;
+  width: 100%;
   position: fixed;
   display: grid;
   grid-template-columns: 1.5fr 6fr 1.5fr;
