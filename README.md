@@ -1,6 +1,13 @@
 # Poet-ion: (PO-SHUN)
 Our Turkey-Week-Hackathon project to make beautiful visualizations of poetry!
 ---
+## Instructions:
+1. `npm run build`: Runs application build for client side.
+2. `npm run webpack:server`: Developement Server? !! What does this command do?
+3. `npm run start:dev`: Starts the developement server.
+
+
+---
 ## MVP Specs:
 - [] user can navigate to homepage
 - [] user can submit a poem through a form component
