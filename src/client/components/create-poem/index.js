@@ -23,11 +23,7 @@ export default class CreatePoem extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
-          Name:
           <textarea value={this.state.value} onChange={this.handleChange} />
-        </label>
-        <input type="submit" value="Submit" />
       </form>
     );
   }

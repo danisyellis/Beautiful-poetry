@@ -6,7 +6,6 @@ export default class Footer extends Component {
     return (
       <div className="utility-bar">
         <CreatePoem />
-        <span><button>Folder</button></span>
       </div>
     );
   }
