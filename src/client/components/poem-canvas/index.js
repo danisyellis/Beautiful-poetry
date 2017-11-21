@@ -1,36 +1,33 @@
 import React, { Component } from 'react';
-import { Layer, Rect, Stage } from 'react-konva';
+import { Rect, Group } from 'react-konva';
 
 export default class PoemCanvas extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      color: 'green',
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    // window.Konva is a global variable for Konva framework namespace
+    this.setState({
+      color: window.Konva.Util.getRandomColor(),
+    });
+  };
 
   render() {
     return (
-      <div className="poem-canvas">
-      
         <Rect
           x={10}
           y={10}
           width={500}
           height={500}
+          fill={this.state.color}
+          onClick={this.handleClick}
         />
-      </div>
     );
   }
-}
-
-
-
-
-
-// export default class PoemCanvas extends Component {
-//   componentDidMount() {
-//     // log Konva.Circle instance
-//     console.log(this.refs.PoemCanvas);
-// }
-// render() {
-//     return (
-//         <Canvas ref="PoemCanvas" width="600" height="600" fill="black"/>
-//     );
-// }
-// }
+};

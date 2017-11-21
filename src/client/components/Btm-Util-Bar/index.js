@@ -31,6 +31,7 @@ class BottomUtilityBar extends Component {
   handleNewPoemClick(event) {
     const bottomBar = document.querySelector('.bottom-bar');
     const slidingForm = document.querySelector('.sliding-form');
+    const closeBtn = document.querySelector('.close-btn');
     // if (this.state.active) {
     //   return;
     // }
@@ -38,6 +39,7 @@ class BottomUtilityBar extends Component {
     bottomBar.style.animationFillMode = 'forwards';
     slidingForm.style.animation = 'slideupform 3s';
     slidingForm.style.animationFillMode = 'forwards';
+    closeBtn.style.display = 'inline';
     this.setState({
       active: true,
     });
@@ -51,6 +53,7 @@ class BottomUtilityBar extends Component {
             <button onClick={this.handleNewPoemClick}>New Poem</button>
             <button>Play</button>
             <button>Save</button>
+            <button className="close-btn">X</button>
           </span>
         </div>
         <form className="sliding-form" onSubmit={this.handleSubmit}>
