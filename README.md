@@ -15,3 +15,12 @@ Our hackathon project to make beautiful visualizations of poetry
 - store poems and users (and make that accessible to user)
 - turn poems into downloadable/linked gifs
 - AR functionality
+
+## Wireframes
+
+- Home Page:
+![alt-text][wf-01]
+![alt-text][wf-02]
+
+[wf-01]: http://res.cloudinary.com/ontoneio/image/upload/c_scale,w_600/v1511231315/Poet-ion/poet-ion_wireframes_1.jpg "Home Page Layout"
+[wf-02]: https://res.cloudinary.com/ontoneio/image/upload/c_scale,w_600/v1511231318/Poet-ion/poet-ion_wireframes_2.jpg "Form Layout"
