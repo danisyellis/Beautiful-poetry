@@ -30,11 +30,13 @@ class BottomUtilityBar extends Component {
   render() {
     return (
       <div className="menu-bar">
+      <div className="bottom-bar">
         <span className="button-bar">
-         <button>New Poem</button>
-         <button>Play</button>
-         <button>Save</button>
-       </span>
+          <button>New Poem</button>
+          <button>Play</button>
+          <button>Save</button>
+        </span>
+      </div>
        <form onSubmit={this.handleSubmit}>
          <label>
            Artist Name:

@@ -24,5 +24,22 @@
 
 .button-bar {
   position: relative;
-  bottom: 75px;
+  top: 15px;
+}
+
+.button-bar > button {
+  margin-right: 20px;
+}
+
+.bottom-bar {
+  border-style: solid;
+  border-radius: 2px;
+  border-color: orange;
+  position: fixed;
+  bottom: 0px;
+  min-width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
