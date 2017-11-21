@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import View from '../view'
-import Footer from '../footer';
-import BottomButtons from '../bottom-buttons'
+import CreatePoem from '../create-poem';
+import BottomUtilityBar from '../bottom-utility-bar';
 import Credits from '../credits';
 import Name from '../Name';
-
 
 export default class Starter extends Component {
   render() {
@@ -12,9 +10,7 @@ export default class Starter extends Component {
     <div className="react-root">
       <Name />
       <Credits />
-      <View/>
-      <Footer />
-      <BottomButtons />
+      <BottomUtilityBar />
     </div>
     );
   }
