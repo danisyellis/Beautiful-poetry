@@ -7,6 +7,7 @@ export default class PoemCanvas extends Component {
   render() {
     return (
       <div className="poem-canvas">
+      
         <Rect
           x={10}
           y={10}
