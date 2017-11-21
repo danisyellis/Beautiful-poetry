@@ -12,12 +12,6 @@
 
 .credits {
   grid-area: credits;
-  animation: slideup 3s infinite;
-}
-
-@keyframes slideup {
-  0%   {bottom: 0px;}
-  100% {bottom: 500px;}
 }
 
 .menu-bar {
@@ -37,17 +31,35 @@
   margin-right: 20px;
 }
 
+@keyframes slideupbar {
+  0%    {bottom: 0px;}
+  100%  {bottom: 450px;}
+}
+
+@keyframes slideupform {
+  0%    {bottom: -50px;}
+  100%  {bottom: 380px;}
+}
+
 .bottom-bar {
   border-style: solid;
   border-radius: 2px;
   border-color: orange;
   position: fixed;
   bottom: 0px;
+  left: 0px;
+  right: 0px;
   min-width: 100%;
   height: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  animation: slideup 3s;
-  animation-fill-mode: forwards;
+  /*animation: slideupbar 3s;
+  animation-fill-mode: forwards;*/
+}
+
+.sliding-form {
+  position: fixed;
+  /*animation: slideupform 3s;
+  animation-fill-mode: forwards;*/
 }
