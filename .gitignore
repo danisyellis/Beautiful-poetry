@@ -4,7 +4,7 @@ build
 poetion.js
 npm-debug.log
 .DS_Store
-
+bundle.js
 # IntelliJ
 *.iml
 /.idea
