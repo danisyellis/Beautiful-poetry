@@ -30,25 +30,25 @@ class BottomUtilityBar extends Component {
   render() {
     return (
       <div className="menu-bar">
-      <div className="bottom-bar">
-        <span className="button-bar">
-          <button>New Poem</button>
-          <button>Play</button>
-          <button>Save</button>
-        </span>
-      </div>
-       <form onSubmit={this.handleSubmit}>
-         <label>
-           Artist Name:
-           <input name="artistName" onChange={this.handleInputChange} />
-         </label>
-         <label>
-           Poem:
-           <textarea name="poemForm" placeholder="Write your poem here" onChange={this.handleTextAreaChange} />
-         </label>
-         <input type="submit" value="Submit" />
-       </form>
-      </div>
+        <div className="bottom-bar">
+          <span className="button-bar">
+            <button>New Poem</button>
+            <button>Play</button>
+            <button>Save</button>
+          </span>
+        </div>
+        <form className="sliding-form" onSubmit={this.handleSubmit}>
+          <label>
+            Artist Name:
+            <input name="artistName" onChange={this.handleInputChange} />
+          </label>
+          <label>
+            Poem:
+            <textarea name="poemForm" placeholder="Write your poem here" onChange={this.handleTextAreaChange} />
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+     </div>
     );
   }
 };

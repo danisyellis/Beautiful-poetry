@@ -12,6 +12,12 @@
 
 .credits {
   grid-area: credits;
+  animation: slideup 3s infinite;
+}
+
+@keyframes slideup {
+  0%   {bottom: 0px;}
+  100% {bottom: 500px;}
 }
 
 .menu-bar {
@@ -42,4 +48,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  animation: slideup 3s;
+  animation-fill-mode: forwards;
 }
