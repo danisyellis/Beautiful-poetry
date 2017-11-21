@@ -1,6 +1,6 @@
 .react-root {
-  max-height: 100vh;
-  max-width: 100vw;
+  width: 100%;
+  position: fixed;
   display: grid;
   grid-template-columns: 1.5fr 6fr 1.5fr;
   grid-template-rows: 1fr 600px 1fr;
@@ -13,12 +13,57 @@
   grid-area: view;
   position: relative;
   border: 1px dotted red;
+
+.credits {
+  grid-area: credits;
 }
 
 .menu-bar {
   grid-area: util;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 15px;
+}
+
+.button-bar {
+  position: relative;
+  top: 15px;
+}
+
+.button-bar > button {
+  margin-right: 20px;
+}
+
+@keyframes slideupbar {
+  0%    {bottom: 0px;}
+  100%  {bottom: 450px;}
+}
+
+@keyframes slideupform {
+  0%    {bottom: -50px;}
+  100%  {bottom: 380px;}
+}
+
+.bottom-bar {
+  border-style: solid;
+  border-radius: 2px;
+  border-color: orange;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  min-width: 100%;
+  height: 50px;
+  display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 0px 15px;
+  /*animation: slideupbar 3s;
+  animation-fill-mode: forwards;*/
+}
+
+.sliding-form {
+  position: fixed;
+  /*animation: slideupform 3s;
+  animation-fill-mode: forwards;*/
 }

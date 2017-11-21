@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import Footer from '../footer';
-import BottomButtons from '../bottom-buttons'
+import BottomUtilityBar from '../bottom-utility-bar';
 import Credits from '../credits';
 import Name from '../Name';
 import PoemCanvas from '../poem-canvas'
-
 
 export default class Starter extends Component {
   render() {
@@ -13,8 +11,7 @@ export default class Starter extends Component {
       <Name />
       <Credits />
       <PoemCanvas />
-      <BottomButtons />
-      <Footer />
+      <BottomUtilityBar />
     </div>
     );
   }
