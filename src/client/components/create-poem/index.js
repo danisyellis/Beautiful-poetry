@@ -16,8 +16,8 @@ export default class CreatePoem extends Component {
   }
 
   handleSubmit(event) {
-    alert('An essay was submitted: ' + this.state.value);
     event.preventDefault();
+    alert('An essay was submitted: ' + this.state.value);
   }
 
   render() {
