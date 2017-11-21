@@ -2,19 +2,19 @@
 Our Turkey-Week-Hackathon project to make beautiful visualizations of poetry!
 ---
 ## MVP Specs:
-- [] user can navigate to homepage
-- [] user can submit a poem through a form component
-- [] user can see the poem rendered after submission
-- [] user can clear out current poem and submit new poem
-- [] poem is presented as simple animation in main view
+- [ ] user can navigate to homepage
+- [ ] user can submit a poem through a form component
+- [ ] user can see the poem rendered after submission
+- [ ] user can clear out current poem and submit new poem
+- [ ] poem is presented as simple animation in main view
 
 
 ## Stretch Specs:
-- [] certain words in poem are animated- like colors become the color and water words move like ocean waves
-- [] working with a poetry API to grab poems (maybe start with women poets or quotes from awesome women)
-- [] store poems and users (and make that accessible to user)
-- [] turn poems into downloadable/linked gifs
-- [] AR functionality
+- [ ] certain words in poem are animated- like colors become the color and water words move like ocean waves
+- [ ] working with a poetry API to grab poems (maybe start with women poets or quotes from awesome women)
+- [ ] store poems and users (and make that accessible to user)
+- [ ] turn poems into downloadable/linked gifs
+- [ ] AR functionality
 
 ---
 
