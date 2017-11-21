@@ -34,6 +34,17 @@ Our Turkey-Week-Hackathon project to make beautiful visualizations of poetry!
   - Format: 15pts
   - Readability: 30pts
   - File structure: 15pts
+  
+  ---
+  
+  ## Technologies Used:
+
+- JavaScript
+- Express
+- React
+- Pixi.js
+- React-Pixi
+- Webpack
 
 
 ## Wireframes
