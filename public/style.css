@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid-template-columns: 1.5fr 6fr 1.5fr;
+  grid-template-rows: 1fr 6fr 1fr;
+  grid-template-areas: 
+  "app-name . credits"
+  ". view ."
+  ". util ."
+}
+.view {
+  grid-area: view;
+  position: relative;
+}
+canvas {
+  background: black;
+  position: absolute;
+  height: 100%;
+  width:100%;
+}
