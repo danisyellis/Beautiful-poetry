@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import BottomUtilityBar from '../bottom-utility-bar';
-import Credits from '../credits';
 import Name from '../Name';
-import PoemCanvas from '../poem-canvas'
+import Credits from '../Credits';
+import PoemCanvas from '../Poem-Canvas'
+import BottomUtilityBar from '../Btm-Util-Bar';
 
 export default class Starter extends Component {
   render() {
