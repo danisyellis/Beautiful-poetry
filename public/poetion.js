@@ -593,6 +593,12 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 
 /***/ }),
 /* 76 */
+
+/***/ (function(module, exports) {
+
+"use strict";
+eval("throw new Error(\"Module build failed: SyntaxError: Unexpected token (2:1)\\n\\n\\u001b[0m \\u001b[90m 1 | \\u001b[39m\\u001b[36mimport\\u001b[39m \\u001b[33mReact\\u001b[39m\\u001b[33m,\\u001b[39m { \\u001b[33mComponent\\u001b[39m } from \\u001b[32m'react'\\u001b[39m\\u001b[33m;\\u001b[39m\\n\\u001b[31m\\u001b[1m>\\u001b[22m\\u001b[39m\\u001b[90m 2 | \\u001b[39m\\u001b[33m<<\\u001b[39m\\u001b[33m<<\\u001b[39m\\u001b[33m<<\\u001b[39m\\u001b[33m<\\u001b[39m \\u001b[33mHEAD\\u001b[39m\\n \\u001b[90m   | \\u001b[39m \\u001b[31m\\u001b[1m^\\u001b[22m\\u001b[39m\\n \\u001b[90m 3 | \\u001b[39m\\u001b[36mimport\\u001b[39m \\u001b[33mView\\u001b[39m from \\u001b[32m'../view'\\u001b[39m\\n \\u001b[90m 4 | \\u001b[39m\\u001b[33m===\\u001b[39m\\u001b[33m===\\u001b[39m\\u001b[33m=\\u001b[39m\\n \\u001b[90m 5 | \\u001b[39m\\u001b[36mimport\\u001b[39m \\u001b[33mFooter\\u001b[39m from \\u001b[32m'../footer'\\u001b[39m\\u001b[33m;\\u001b[39m\\u001b[0m\\n\");\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/client/components/starter/index.js\n// module id = 76\n// module chunks = 0\n\n//# sourceURL=webpack:///./src/client/components/starter/index.js?");
+
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -618,6 +624,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 
 "use strict";
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = __webpack_require__(0);\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar Name = function (_Component) {\n  _inherits(Name, _Component);\n\n  function Name() {\n    _classCallCheck(this, Name);\n\n    return _possibleConstructorReturn(this, (Name.__proto__ || Object.getPrototypeOf(Name)).apply(this, arguments));\n  }\n\n  _createClass(Name, [{\n    key: \"render\",\n    value: function render() {\n      return _react2.default.createElement(\n        \"div\",\n        { className: \"App-name\" },\n        _react2.default.createElement(\n          \"h1\",\n          null,\n          \" Poetion \"\n        )\n      );\n    }\n  }]);\n\n  return Name;\n}(_react.Component);\n\nexports.default = Name;\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/client/components/Name/index.js\n// module id = 79\n// module chunks = 0\n\n//# sourceURL=webpack:///./src/client/components/Name/index.js?");
+
 
 /***/ })
 /******/ ]);
