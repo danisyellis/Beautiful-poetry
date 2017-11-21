@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import CreatePoem from '../create-poem';
 import BottomUtilityBar from '../bottom-utility-bar';
 import Credits from '../credits';
 import Name from '../Name';
