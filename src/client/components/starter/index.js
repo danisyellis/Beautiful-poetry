@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import View from '../view'
 import Footer from '../footer';
 import BottomButtons from '../bottom-buttons'
 import Credits from '../credits';
 import Name from '../Name';
+import PoemCanvas from '../poem-canvas'
 
 
 export default class Starter extends Component {
@@ -12,9 +12,9 @@ export default class Starter extends Component {
     <div className="react-root">
       <Name />
       <Credits />
-      <View/>
-      <Footer />
+      <PoemCanvas />
       <BottomButtons />
+      <Footer />
     </div>
     );
   }

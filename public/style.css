@@ -9,11 +9,12 @@
   ". view ."
   ". util ."
 }
-.view {
+.poem-canvas {
   grid-area: view;
   position: relative;
+  border: 1px dotted red;
 }
-.util {
+.menu-bar {
   grid-area: util;
   display: flex;
   flex-direction: row;
