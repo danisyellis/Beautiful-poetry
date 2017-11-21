@@ -9,8 +9,11 @@
 }
 .view {
   grid-area: view;
-  display: flex;
   position: relative;
+}
+.util {
+  grid-area: util;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 0px 15px;
