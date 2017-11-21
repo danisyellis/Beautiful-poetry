@@ -39,13 +39,6 @@ module.exports = {
           presets: ['es2015']
         }
       },
-      {
-        loaders: [
-        {
-          test: /\.json$/,
-          loader: 'json'
-        }
-      ]},
     ],
   },
   plugins: [
