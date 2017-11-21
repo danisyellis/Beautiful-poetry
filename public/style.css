@@ -4,6 +4,16 @@
   grid-template-rows: 1fr 6fr 1fr;
   grid-template-areas: 
   "app-name . credits"
-  "view view view"
-  "util util util"
+  ". view ."
+  ". util ."
+}
+.view {
+  grid-area: view;
+  position: relative;
+}
+canvas {
+  background: black;
+  position: absolute;
+  height: 100%;
+  width:100%;
 }
