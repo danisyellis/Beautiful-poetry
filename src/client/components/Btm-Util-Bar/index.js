@@ -8,6 +8,7 @@ class BottomUtilityBar extends Component {
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleTextAreaChange = this.handleTextAreaChange.bind(this);
     this.handleNewPoemClick = this.handleNewPoemClick.bind(this);
+    this.handleCloseClick = this.handleCloseClick.bind(this);
     this.state = {
       active: false,
     };
@@ -48,6 +49,20 @@ class BottomUtilityBar extends Component {
     });
   }
 
+  handleCloseClick(event) {
+    const bottomBar = document.querySelector('.bottom-bar');
+    const slidingForm = document.querySelector('.sliding-form');
+    const closeBtn = document.querySelector('.close-btn');
+    bottomBar.style.animation = 'slidedownbar 3s';
+    bottomBar.style.animationFillMode = 'forwards';
+    slidingForm.style.animation = 'slidedownform 3s';
+    slidingForm.style.animationFillMode = 'forwards';
+    closeBtn.style.display = 'none';
+    this.setState({
+      active: false,
+    });
+  }
+
   render() {
     return (
       <div className="menu-bar">
@@ -56,7 +71,7 @@ class BottomUtilityBar extends Component {
             <button onClick={this.handleNewPoemClick}>New Poem</button>
             <button>Play</button>
             <button>Save</button>
-            <button className="close-btn">X</button>
+            <button className="close-btn" onClick={this.handleCloseClick}>X</button>
           </span>
         </div>
         <form className="sliding-form" onSubmit={this.handleSubmit}>
