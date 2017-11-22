@@ -43,9 +43,9 @@ class BottomUtilityBar extends Component {
     if (this.state.active) {
       return;
     }
-    bottomBar.style.animation = 'slideupbar 3s';
+    bottomBar.style.animation = 'slideupbar 5s';
     bottomBar.style.animationFillMode = 'forwards';
-    slidingForm.style.animation = 'slideupform 3s';
+    slidingForm.style.animation = 'slideupform 5s';
     slidingForm.style.animationFillMode = 'forwards';
     closeBtn.style.display = 'inline';
     this.setState({
@@ -57,9 +57,9 @@ class BottomUtilityBar extends Component {
     const bottomBar = document.querySelector('.bottom-bar');
     const slidingForm = document.querySelector('.sliding-form');
     const closeBtn = document.querySelector('.close-btn');
-    bottomBar.style.animation = 'slidedownbar 3s';
+    bottomBar.style.animation = 'slidedownbar 2s';
     bottomBar.style.animationFillMode = 'forwards';
-    slidingForm.style.animation = 'slidedownform 3s';
+    slidingForm.style.animation = 'slidedownform 2s';
     slidingForm.style.animationFillMode = 'forwards';
     closeBtn.style.display = 'none';
     this.setState({
