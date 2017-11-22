@@ -160,6 +160,10 @@ body {
   margin-top: 15px;
 }
 
+.edit-btns:hover {
+  cursor: pointer;
+}
+
 /** {
   border: .25px solid red;
 }*/
