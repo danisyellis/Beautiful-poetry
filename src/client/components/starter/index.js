@@ -14,12 +14,7 @@ export default class Starter extends Component {
       <Name />
       <Credits />
 
-      <Stage className="poem-canvas"
-       width={1260} 
-       height={600}>
-        <Layer>
-         
-        </Layer>
+      <Stage className="poem-canvas">
       </Stage>
 
       <BottomUtilityBar />

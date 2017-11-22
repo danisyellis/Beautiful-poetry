@@ -47,7 +47,7 @@ class BottomUtilityBar extends Component {
     bottomBar.style.animationFillMode = 'forwards';
     slidingForm.style.animation = 'slideupform 5s';
     slidingForm.style.animationFillMode = 'forwards';
-    closeBtn.style.display = 'inline';
+    closeBtn.style.visibility = 'visible';
     this.setState({
       active: true,
     });
@@ -61,7 +61,7 @@ class BottomUtilityBar extends Component {
     bottomBar.style.animationFillMode = 'forwards';
     slidingForm.style.animation = 'slidedownform 2s';
     slidingForm.style.animationFillMode = 'forwards';
-    closeBtn.style.display = 'none';
+    closeBtn.style.visibility = 'hidden';
     this.setState({
       active: false,
     });
@@ -70,14 +70,35 @@ class BottomUtilityBar extends Component {
   render() {
     return (
       <div className="menu-bar">
+
         <div className="bottom-bar">
-          <span className="button-bar">
-            <button onClick={this.handleNewPoemClick}>New Poem</button>
-            <button>Play</button>
-            <button>Save</button>
-            <button className="close-btn" onClick={this.handleCloseClick}>X</button>
-          </span>
+
+          <div className=""></div>
+
+          <div className="button-bar">
+            <div className="edit-btns" onClick={this.handleNewPoemClick}>
+              <img src="https://res.cloudinary.com/ontoneio/image/upload/c_scale,w_75/v1511343198/Poet-ion/pencil.png" alt="Create/Edit Poem" />
+            </div>
+
+            <div className="edit-btns">
+              <img src="https://res.cloudinary.com/ontoneio/image/upload/c_scale,w_75/v1511343198/Poet-ion/play.png" alt="Play/Render"/>
+            </div>
+
+            <div className="edit-btns">
+              <img src="https://res.cloudinary.com/ontoneio/image/upload/c_scale,w_75/v1511343198/Poet-ion/download.png" alt="Save/Export to GIF/PNG"/>
+            </div>
+          </div>
+
+          <div className="">
+            <div className="close-btn" onClick={this.handleCloseClick}>
+              <div className="edit-btns">                        
+                    <img src="https://res.cloudinary.com/ontoneio/image/upload/c_scale,w_75/v1511343902/Poet-ion/close.png" alt="Close Poem Create/Edit View"/>          
+              </div>
+            </div>
+          </div>
+
         </div>
+
         <form className="sliding-form" onSubmit={this.handleSubmit}>
           <label>
             Artist Name:
@@ -90,6 +111,7 @@ class BottomUtilityBar extends Component {
           <input type="submit" value="Submit" />
         </form>
      </div>
+
     );
   }
 };
