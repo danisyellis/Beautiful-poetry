@@ -28,8 +28,12 @@ class BottomUtilityBar extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    console.log(this.state.artist);
-    console.log(this.state.poem);
+    const artist = new window.Konva.TextPath({ text: this.state.artist });
+    const poem = new window.Konva.TextPath({ text: this.state.poem });
+    const artistForm = document.querySelector('.artist-form');
+    const poemForm = document.querySelector('.poem-form');
+    artistForm.value = '';
+    poemForm.value = '';
   }
 
   handleNewPoemClick(event) {
@@ -77,11 +81,11 @@ class BottomUtilityBar extends Component {
         <form className="sliding-form" onSubmit={this.handleSubmit}>
           <label>
             Artist Name:
-            <input name="artistName" onChange={this.handleInputChange} />
+            <input className="artist-form" name="artistName" onChange={this.handleInputChange} />
           </label>
           <label>
             Poem:
-            <textarea name="poemForm" placeholder="Write your poem here" onChange={this.handleTextAreaChange} />
+            <textarea className="poem-form" name="poemForm" placeholder="Write your poem here" onChange={this.handleTextAreaChange} />
           </label>
           <input type="submit" value="Submit" />
         </form>
