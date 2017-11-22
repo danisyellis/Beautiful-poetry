@@ -8,6 +8,7 @@ import { Stage, Layer } from 'react-konva';
 
 export default class Starter extends Component {
 
+
   render() {
     return (
 
@@ -16,6 +17,9 @@ export default class Starter extends Component {
       <Credits />
 
       <Stage className="poem-canvas">
+
+        <PoemCanvas/>
+
       </Stage>
 
       <BottomUtilityBar />
