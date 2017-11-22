@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import Name from '../Name';
 import Credits from '../Credits';
-import PoemCanvas from '../poem-canvas';
+import PoemCanvas from '../Poem-Canvas';
 import BottomUtilityBar from '../Btm-Util-Bar';
 import { Stage, Layer } from 'react-konva';
 
 export default class Starter extends Component {
-
 
   render() {
     return (
