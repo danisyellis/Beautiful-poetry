@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Canvas } from 'react-konva';
+import { Rect, Group, Canvas } from 'react-konva';
 
 export default class PoemCanvas extends Component {
 
