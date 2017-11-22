@@ -29,18 +29,16 @@ class BottomUtilityBar extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    const artist = new window.Konva.TextPath({ text: this.state.artist });
-    const poem = new window.Konva.TextPath({ text: this.state.poem });
-    const artistForm = document.querySelector('#artist-field');
-    const poemForm = document.querySelector('#poem-field');
+    const artistForm = this.refs.artistField;
+    const poemForm = this.refs.poemField;
     artistForm.value = '';
     poemForm.value = '';
   }
 
   handleNewPoemClick(event) {
-    const bottomBar = document.querySelector('.bottom-bar');
-    const slidingForm = document.querySelector('.sliding-form');
-    const closeBtn = document.querySelector('.close-btn');
+    const bottomBar = this.refs.bottomBar;
+    const slidingForm = this.refs.slidingForm;
+    const closeBtn = this.refs.closeBtn;
     if (this.state.active) {
       return;
     }
@@ -55,9 +53,9 @@ class BottomUtilityBar extends Component {
   }
 
   handleCloseClick(event) {
-    const bottomBar = document.querySelector('.bottom-bar');
-    const slidingForm = document.querySelector('.sliding-form');
-    const closeBtn = document.querySelector('.close-btn');
+    const bottomBar = this.refs.bottomBar;
+    const slidingForm = this.refs.slidingForm;
+    const closeBtn = this.refs.closeBtn;
     bottomBar.style.animation = 'slidedownbar 2s';
     bottomBar.style.animationFillMode = 'forwards';
     slidingForm.style.animation = 'slidedownform 2s';
@@ -72,7 +70,7 @@ class BottomUtilityBar extends Component {
     return (
       <div className="menu-bar">
 
-        <div className="bottom-bar">
+        <div ref="bottomBar" className="bottom-bar">
 
           <div className="app-name">
             <Name />
@@ -93,23 +91,23 @@ class BottomUtilityBar extends Component {
             </div>
           </div>
 
-          <div className="close-btn" onClick={this.handleCloseClick}>
-            <div className="edit-btns">                        
-                  <img src="https://res.cloudinary.com/ontoneio/image/upload/c_scale,w_75/v1511343902/Poet-ion/close.png" alt="Close Poem Create/Edit View"/>          
+          <div ref="closeBtn" className="close-btn" onClick={this.handleCloseClick}>
+            <div className="edit-btns">
+                  <img src="https://res.cloudinary.com/ontoneio/image/upload/c_scale,w_75/v1511343902/Poet-ion/close.png" alt="Close Poem Create/Edit View"/>
             </div>
           </div>
-        
+
 
         </div>
 
-       
-          <form className="sliding-form" onSubmit={this.handleSubmit}>
-            
-            <input id="artist-field" className="form-field" placeholder="Artist Name" name="artistName" onChange={this.handleInputChange} />
-            
-            
-            <textarea id="poem-field" className="poem-field" placeholder="Roses Are Red and Violets are Blue" name="poemForm" onChange={this.handleTextAreaChange} />
-            
+
+          <form ref="slidingForm" className="sliding-form" onSubmit={this.handleSubmit}>
+
+            <input ref="artistField" className="form-field" placeholder="Artist Name" name="artistName" onChange={this.handleInputChange} />
+
+
+            <textarea ref="poemField" className="poem-field" placeholder="Roses Are Red and Violets are Blue" name="poemForm" onChange={this.handleTextAreaChange} />
+
             <input type="submit" value="Submit" />
 
           </form>
