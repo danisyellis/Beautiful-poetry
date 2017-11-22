@@ -11,9 +11,9 @@ export default class Starter extends Component {
     <div className="react-root">
       <Name />
       <Credits />
-      <Stage className="poem-canvas" width={700} height={700}>
+      <Stage className="poem-canvas" width={1260} height={600}>
         <Layer>
-          <PoemCanvas />
+          {/* <PoemCanvas /> */}
         </Layer>
       </Stage>
       <BottomUtilityBar />
