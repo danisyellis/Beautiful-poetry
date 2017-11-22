@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Name from '../Name';
 
 class BottomUtilityBar extends Component {
   constructor(props) {
@@ -30,8 +31,8 @@ class BottomUtilityBar extends Component {
     event.preventDefault();
     const artist = new window.Konva.TextPath({ text: this.state.artist });
     const poem = new window.Konva.TextPath({ text: this.state.poem });
-    const artistForm = document.querySelector('.artist-form');
-    const poemForm = document.querySelector('.poem-form');
+    const artistForm = document.querySelector('#artist-field');
+    const poemForm = document.querySelector('#poem-field');
     artistForm.value = '';
     poemForm.value = '';
   }
@@ -73,7 +74,10 @@ class BottomUtilityBar extends Component {
 
         <div className="bottom-bar">
 
-          <div className=""></div>
+          <div className="app-name">
+            <Name />
+          </div>
+
 
           <div className="button-bar">
             <div className="edit-btns" onClick={this.handleNewPoemClick}>
@@ -89,27 +93,26 @@ class BottomUtilityBar extends Component {
             </div>
           </div>
 
-          <div className="">
-            <div className="close-btn" onClick={this.handleCloseClick}>
-              <div className="edit-btns">                        
-                    <img src="https://res.cloudinary.com/ontoneio/image/upload/c_scale,w_75/v1511343902/Poet-ion/close.png" alt="Close Poem Create/Edit View"/>          
-              </div>
+          <div className="close-btn" onClick={this.handleCloseClick}>
+            <div className="edit-btns">                        
+                  <img src="https://res.cloudinary.com/ontoneio/image/upload/c_scale,w_75/v1511343902/Poet-ion/close.png" alt="Close Poem Create/Edit View"/>          
             </div>
           </div>
+        
 
         </div>
 
-        <form className="sliding-form" onSubmit={this.handleSubmit}>
-          <label>
-            Artist Name:
-            <input className="artist-form" name="artistName" onChange={this.handleInputChange} />
-          </label>
-          <label>
-            Poem:
-            <textarea className="poem-form" name="poemForm" placeholder="Write your poem here" onChange={this.handleTextAreaChange} />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
+       
+          <div className="sliding-form" onSubmit={this.handleSubmit}>
+            
+            <input id="artist-field" className="form-field" placeholder="Artist Name" name="artistName" onChange={this.handleInputChange} />
+            
+            
+            <textarea id="poem-field" className="poem-field" placeholder="Roses Are Red and Violets are Blue" name="poemForm" onChange={this.handleTextAreaChange} />
+            
+            <input type="submit" value="Submit" />
+          </div>
+
      </div>
 
     );

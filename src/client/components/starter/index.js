@@ -11,7 +11,7 @@ export default class Starter extends Component {
     return (
 
     <div className="react-root">
-      <Name />
+      {/* <Name /> */}
       <Credits />
 
       <Stage className="poem-canvas">
