@@ -103,7 +103,7 @@ class BottomUtilityBar extends Component {
         </div>
 
        
-          <div className="sliding-form" onSubmit={this.handleSubmit}>
+          <form className="sliding-form" onSubmit={this.handleSubmit}>
             
             <input id="artist-field" className="form-field" placeholder="Artist Name" name="artistName" onChange={this.handleInputChange} />
             
@@ -111,7 +111,8 @@ class BottomUtilityBar extends Component {
             <textarea id="poem-field" className="poem-field" placeholder="Roses Are Red and Violets are Blue" name="poemForm" onChange={this.handleTextAreaChange} />
             
             <input type="submit" value="Submit" />
-          </div>
+
+          </form>
 
      </div>
 
