@@ -30,8 +30,8 @@ class BottomUtilityBar extends Component {
     event.preventDefault();
     const artist = new window.Konva.TextPath({ text: this.state.artist });
     const poem = new window.Konva.TextPath({ text: this.state.poem });
-    const artistForm = document.querySelector('.artist-form');
-    const poemForm = document.querySelector('.poem-form');
+    const artistForm = document.querySelector('.artist-field');
+    const poemForm = document.querySelector('.poem-field');
     artistForm.value = '';
     poemForm.value = '';
   }
@@ -99,17 +99,17 @@ class BottomUtilityBar extends Component {
 
         </div>
 
-        <form className="sliding-form" onSubmit={this.handleSubmit}>
-          <label>
-            Artist Name:
-            <input className="artist-form" name="artistName" onChange={this.handleInputChange} />
-          </label>
-          <label>
-            Poem:
-            <textarea className="poem-form" name="poemForm" placeholder="Write your poem here" onChange={this.handleTextAreaChange} />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
+       
+          <form className="sliding-form" onSubmit={this.handleSubmit}>
+            
+            <input className="artist-field" placeholder="Artist Name" name="artistName" onChange={this.handleInputChange} />
+            
+            
+            <textarea className="poem-field" name="poemForm" placeholder="Roses Are Red and Violets are Blue" onChange={this.handleTextAreaChange} />
+            
+            <input type="submit" value="Submit" />
+          </form>
+
      </div>
 
     );

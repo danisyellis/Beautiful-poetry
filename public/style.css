@@ -55,13 +55,7 @@ body {
   justify-content: space-between;
   align-items: center;
   left: 62.5px;
-
-  /* top: 15px; */
 }
-
-/* .button-bar > button {
-  margin-right: 20px;
-} */
 
 .edit-btns {
   margin: 0px 20px;
@@ -112,7 +106,16 @@ body {
   z-index: 2;
 }
 
+/* .form-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
 .sliding-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: fixed;
   z-index: 1;
 }
