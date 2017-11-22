@@ -23,8 +23,8 @@ export default class PoemCanvas extends Component {
         <Rect
           x={10}
           y={10}
-          width={500}
-          height={500}
+          width={400}
+          height={400}
           fill={this.state.color}
           onClick={this.handleClick}
         />
