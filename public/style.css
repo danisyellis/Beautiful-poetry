@@ -10,7 +10,7 @@ body {
   max-height: detect;
   display: grid;
   grid-template-columns: 1.5fr 6fr 1.5fr;
-  grid-template-rows: 1fr 600px 1fr;
+  grid-template-rows: 100px 703px 100px;
   grid-row-gap: 15px;
   grid-template-areas:
   "app-logo . credits"

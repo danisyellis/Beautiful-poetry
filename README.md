@@ -1,11 +1,12 @@
 # Poet-ion: (PO-SHUN)
 Our Turkey-Week-Hackathon project to make beautiful visualizations of poetry!
+
+### Contributors Patrick Kallas, Rhonda Brown, Dani Gellis, Jonathan Mitchell.
 ---
 ## Instructions:
 1. `npm run build`: Runs application build for client side.
 2. `npm run webpack:server`: Developement Server? !! What does this command do?
 3. `npm run start:dev`: Starts the developement server.
-
 
 ---
 ## MVP Specs:
@@ -56,3 +57,8 @@ Our Turkey-Week-Hackathon project to make beautiful visualizations of poetry!
 
 [wf-01]: http://res.cloudinary.com/ontoneio/image/upload/c_scale,w_600/v1511231315/Poet-ion/poet-ion_wireframes_1.jpg "Home Page Layout"
 [wf-02]: https://res.cloudinary.com/ontoneio/image/upload/c_scale,w_600/v1511231318/Poet-ion/poet-ion_wireframes_2.jpg "Form Layout"
+
+### Project Challenges:
+- Integrating React with a canvas drawing library.
+- Laying out off screen elements with react.
+- rendering animated text.

@@ -16,11 +16,11 @@ export default class Starter extends Component {
       <Logo />
       <Credits />
 
-      <Stage className="poem-canvas">
+      {/* <Stage className="poem-canvas"> */}
 
-        <PoemCanvas/>
+        <PoemCanvas/> 
 
-      </Stage>
+      {/* </Stage> */}
 
       <BottomUtilityBar />
     </div>
