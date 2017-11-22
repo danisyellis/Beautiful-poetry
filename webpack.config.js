@@ -21,23 +21,10 @@ module.exports = {
           /\.json$/
         ],
         loader: 'url',
-        query: {
-          presets: ['react', 'es2015', 'stage-1']
-        }
       }, {
-        test: /\.(css|scss)?$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader'],
-          publicPath: '/public'
-        })
       }, {
         test: /\.(js|jsx)?$/,
         loader: 'babel-loader',
-        include: [/(src|test)/],
-        query: {
-          presets: ['es2015']
-        }
       }
     ]
   },
