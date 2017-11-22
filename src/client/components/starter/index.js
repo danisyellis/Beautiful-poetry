@@ -7,7 +7,6 @@ import { Stage, Layer } from 'react-konva';
 
 export default class Starter extends Component {
 
-
   render() {
     return (
 

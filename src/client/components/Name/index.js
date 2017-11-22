@@ -10,6 +10,4 @@ class Name extends Component {
   }
 }
 
-
-
 export default Name
