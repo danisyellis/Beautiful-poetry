@@ -8,10 +8,6 @@ export default class PoemCanvas extends Component {
     this.loadCanvas = this.loadCanvas.bind(this);
   }
 
-  // componentDidMount() {
-  //   this.loadCanvas();
-  // }
-
   loadCanvas() {
     // window.Konva is a global variable for Konva framework namespace
     this.setState({
@@ -21,7 +17,7 @@ export default class PoemCanvas extends Component {
 
   render() {
     return (
-        <Canvas width={1260} height={600}/>
+        <Canvas width={1260} height={600} />
     );
   }
 };

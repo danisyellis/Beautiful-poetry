@@ -3,6 +3,7 @@ import Name from '../Name';
 import Credits from '../Credits';
 import PoemCanvas from '../poem-canvas';
 import BottomUtilityBar from '../Btm-Util-Bar';
+import PoemText from '../poem-text';
 import { Stage, Layer } from 'react-konva';
 
 export default class Starter extends Component {
@@ -13,7 +14,7 @@ export default class Starter extends Component {
       <Credits />
       <Stage className="poem-canvas" width={1260} height={600}>
         <Layer>
-          {/* <PoemCanvas /> */}
+          <PoemText />
         </Layer>
       </Stage>
       <BottomUtilityBar />

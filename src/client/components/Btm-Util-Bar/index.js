@@ -28,12 +28,14 @@ class BottomUtilityBar extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    const artist = new window.Konva.TextPath({ text: this.state.artist });
-    const poem = new window.Konva.TextPath({ text: this.state.poem });
+    let pageText = window.Konva.stages[0].children[0].children[0];
     const artistForm = document.querySelector('.artist-form');
     const poemForm = document.querySelector('.poem-form');
     artistForm.value = '';
     poemForm.value = '';
+    pageText.setText(this.state.poem);
+    pageText.rotate(180);
+    console.log(pageText);
   }
 
   handleNewPoemClick(event) {
@@ -51,6 +53,7 @@ class BottomUtilityBar extends Component {
     this.setState({
       active: true,
     });
+    console.log(window.Konva.stages[0].children[0].children[0]);
   }
 
   handleCloseClick(event) {
