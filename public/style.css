@@ -9,16 +9,25 @@
   ". view ."
   ". util ."
 }
+
+.app-name {
+  z-index: 3;
+}
+
 .poem-canvas {
   grid-area: view;
   position: relative;
   width: 100%;
   height: 100%;
-  /*border: 1px dotted red;*/
 }
 
 .credits {
   grid-area: credits;
+}
+
+.credits > ul {
+  list-style-type: none;
+  font-size: 10px;
 }
 
 .menu-bar {
@@ -40,41 +49,45 @@
 
 @keyframes slideupbar {
   0%    {bottom: 0px;}
-  100%  {bottom: 450px;}
+  100%  {bottom: 650px;}
 }
 
 @keyframes slideupform {
   0%    {bottom: -50px;}
-  100%  {bottom: 380px;}
+  100%  {bottom: 580px;}
 }
 
 @keyframes slidedownbar {
-  0%    {top: 0px;}
-  100%  {top: 450px;}
+  0%    {bottom: 650px;}
+  100%  {bottom: 0px;}
 }
 
 @keyframes slidedownform {
-  0%    {top: -50px;}
-  100%  {top: 380px;}
+  0%    {bottom: 580px;}
+  100%  {bottom: -50px;}
 }
 
+/*****z-index on bottom-bar and sliding-form****/
 .bottom-bar {
   border-style: solid;
   border-radius: 2px;
   border-color: orange;
+  background-color: orange;
   position: fixed;
   bottom: 0px;
   left: 0px;
   right: 0px;
   min-width: 100%;
-  height: 50px;
+  height: 150px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  z-index: 2;
 }
 
 .sliding-form {
   position: fixed;
+  z-index: 1;
 }
 
 .close-btn {

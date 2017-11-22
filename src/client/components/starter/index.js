@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Name from '../Name';
 import Credits from '../Credits';
-import PoemCanvas from '../Poem-Canvas'
+import PoemCanvas from '../poem-canvas';
 import BottomUtilityBar from '../Btm-Util-Bar';
 import { Stage, Layer } from 'react-konva';
 
