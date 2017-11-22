@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Rect, Group } from 'react-konva';
+import { Rect, Group, Canvas } from 'react-konva';
 
 export default class PoemCanvas extends Component {
 
@@ -18,9 +18,9 @@ export default class PoemCanvas extends Component {
   //   });
   // };
 
-  render() {
-    return (
-        <Canvas width={this.loadCanvas} />
-    );
-  }
+  // render() {
+  //   return (
+  //       <Canvas />
+  //   );
+  // }
 };

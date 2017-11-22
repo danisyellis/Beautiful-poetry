@@ -6,18 +6,26 @@ import BottomUtilityBar from '../Btm-Util-Bar';
 import { Stage, Layer } from 'react-konva';
 
 export default class Starter extends Component {
+
+
   render() {
     return (
+
     <div className="react-root">
       <Name />
       <Credits />
-      <Stage className="poem-canvas" width={1260} height={600}>
+
+      <Stage className="poem-canvas"
+       width={1260} 
+       height={600}>
         <Layer>
-          {/* <PoemCanvas /> */}
+         
         </Layer>
       </Stage>
+
       <BottomUtilityBar />
     </div>
+    
     );
   }
 }
