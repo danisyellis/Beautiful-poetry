@@ -8,6 +8,9 @@ class BottomUtilityBar extends Component {
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleTextAreaChange = this.handleTextAreaChange.bind(this);
     this.handleNewPoemClick = this.handleNewPoemClick.bind(this);
+    this.state = {
+      active: false,
+    };
   }
 
   handleInputChange(event) {
@@ -32,9 +35,9 @@ class BottomUtilityBar extends Component {
     const bottomBar = document.querySelector('.bottom-bar');
     const slidingForm = document.querySelector('.sliding-form');
     const closeBtn = document.querySelector('.close-btn');
-    // if (this.state.active) {
-    //   return;
-    // }
+    if (this.state.active) {
+      return;
+    }
     bottomBar.style.animation = 'slideupbar 3s';
     bottomBar.style.animationFillMode = 'forwards';
     slidingForm.style.animation = 'slideupform 3s';
