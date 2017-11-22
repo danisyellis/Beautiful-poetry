@@ -33,6 +33,7 @@ class BottomUtilityBar extends Component {
     const poemForm = this.refs.poemField;
     artistForm.value = '';
     poemForm.value = '';
+    this.handleCloseClick();
   }
 
   handleNewPoemClick(event) {
