@@ -31,8 +31,11 @@ class BottomUtilityBar extends Component {
     event.preventDefault();
     const artistForm = this.refs.artistField;
     const poemForm = this.refs.poemField;
+    const poemCanvas = document.querySelector('.poem-canvas');
     artistForm.value = '';
     poemForm.value = '';
+    poemCanvas.innerText = this.state.poem;
+    poemCanvas.className = 'poem-canvas animated slideInRight';
     this.handleCloseClick();
   }
 
