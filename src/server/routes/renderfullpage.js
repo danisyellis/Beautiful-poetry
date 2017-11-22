@@ -7,6 +7,7 @@ export default function renderFullPage(html) {
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Arvo|Exo+2|Russo+One" rel="stylesheet">
       <title>Poetion</title>
     </head>
     <body>
